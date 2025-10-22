@@ -1,0 +1,252 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+.page[b-vvnii9gpj1] {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    background-color: #0e0e0e;
+    color: white;
+    min-height: 100px;
+    align-items: center;
+}
+
+main[b-vvnii9gpj1] {
+    width: 100%;
+    height: 100%;
+    max-height: 1300px;
+}
+
+.header[b-vvnii9gpj1] {
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 130px;
+    height: 100%;
+    min-height: 100px;
+}
+
+.header h2[b-vvnii9gpj1] {
+    margin: 0;
+    font-size: 20;
+}
+
+.header-right img[b-vvnii9gpj1] {
+    position: relative;
+    bottom: 7px;
+}
+
+.header-left[b-vvnii9gpj1] {
+    display: flex;
+    
+    width: 80%;
+    max-width: 550px;
+}
+
+.header-left img[b-vvnii9gpj1] {
+    position: relative;
+    left: 30px;
+    top: 9px;
+}
+
+.header-left input[b-vvnii9gpj1] {    
+    background-color: #141414;
+    color: #ffffff;
+    
+    height: 100%;
+    width: 100%;
+
+    min-height: 42px;
+    
+    margin: 0 auto;
+    padding-left: 35px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    border: none;
+
+    outline-color: rgba(100, 100, 100, 0);
+
+    transition: outline-color 0.3s;
+}
+
+.header-left input:focus[b-vvnii9gpj1] { 
+    outline-color: rgba(100, 100, 100, 1);
+}
+
+.header-down[b-vvnii9gpj1] {
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 130px;
+    margin-top: 800px;
+    height: 180px;
+}
+
+.header-right-dow[b-vvnii9gpj1] {
+    position: relative;
+    bottom: 20px;
+}
+
+.header-right-dow img[b-vvnii9gpj1] {
+    position: relative;
+    bottom: 7px;
+}
+
+/* /Pages/Books.razor.rz.scp.css */
+
+.ribbon[b-5p9ukjat5m] 
+{
+    background-color: #0e0e0e;
+    position: relative;
+    display: flex;
+    width: 1520px;
+    height: 330px;
+
+    padding: 0px 130px;
+}
+
+.ribbon a[b-5p9ukjat5m]
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.ribbon-books[b-5p9ukjat5m] 
+{
+    background-color: #ffffff00;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    transition: opacity 0.3s ease;
+}
+
+.ribbon-books img[b-5p9ukjat5m]
+{
+    height: auto;
+    border-radius: 15px;
+}
+
+.ribbon-books:hover[b-5p9ukjat5m] 
+{
+    opacity: 0.7;
+}
+
+.ribbon-books span[b-5p9ukjat5m]
+{
+   margin-top: 10px;
+   color: #ffffff;
+}
+
+/* /Pages/BookSlider.razor.rz.scp.css */
+.slider-wrapper[b-zqxfc3argr] {
+  background-color: #1b1b1b;
+  
+  border-color: rgba(100, 100, 100, 1);
+  mask-border-width: 1px;
+  border: 1px solid #333;
+  border-style: ridge;
+  border-left: none;
+  border-right: none;
+
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px; 
+  width: 100%;
+  height: 100%;
+  max-height: 350px;
+}
+
+.book-slider[b-zqxfc3argr] {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.slider-container[b-zqxfc3argr] {
+  display: flex;
+  scroll-behavior: smooth;
+
+  transition: transform 0.6s; 
+}
+
+.book-card[b-zqxfc3argr] {
+  flex: 0 0 190px;
+  max-width: 200px;
+  margin: 10px 5px;
+  border-radius: 15px;
+
+  background-color: #2d2d2d;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.book-card:hover[b-zqxfc3argr] {
+  transform: scale(1.05);
+  background-color: rgba(100, 100, 100, 1);
+}
+
+.book-card img[b-zqxfc3argr] {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ribbon-books[b-zqxfc3argr] {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.ribbon-books span[b-zqxfc3argr] {
+  margin-top: 5px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.slider-btn[b-zqxfc3argr] {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+
+  width: 100%;
+  height: 100%;
+  max-width: 40px;
+  max-height: 40px;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease-in;
+}
+
+.slider-btn:hover[b-zqxfc3argr] {
+  background-color: rgba(100, 100, 100, 1);
+}
+
+.slider-btn.left[b-zqxfc3argr] {
+  left: 10px;
+}
+
+
+.slider-btn.right[b-zqxfc3argr] {
+  right: 10px;
+}
+
+
+
+
