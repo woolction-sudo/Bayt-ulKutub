@@ -4,7 +4,7 @@
     left: 150px;
     display: flex;
     gap: 15px;  
-    padding: 75px 130px;
+    padding: 75px 100px;
 }
 
 .custum-btn 
@@ -31,6 +31,21 @@
 .custum-btn:hover {
   background: #000000; 
   transform: scale(1.05);
+}
+
+@media (max-width: 830px) 
+{
+    .btn-parent  {
+        padding: 30px 30px;
+    }
+}
+
+
+@media (max-width: 768px) 
+{
+    .btn-parent  {
+        padding: 20px 20px;
+    }
 }
 
 html, body {
