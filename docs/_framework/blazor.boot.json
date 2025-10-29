@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "WebBookApp",
   "resources": {
-    "hash": "sha256-Q1wWx089X4fTvAp23x17hdV6j329W4rbkUZs9O6UAnI=",
+    "hash": "sha256-yd7uHrWR7uWbErtF050yYv5fO94YbJyKzqmiQbumZvM=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.c7tg2xsg2a.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.byrlz0xip8.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -36,7 +36,7 @@
       "System.Text.Json.lepawgii6u.wasm": "System.Text.Json.wasm",
       "System.Text.RegularExpressions.3zydt3n8n9.wasm": "System.Text.RegularExpressions.wasm",
       "System.Private.CoreLib.s69h2mp62g.wasm": "System.Private.CoreLib.wasm",
-      "WebBookApp.1rh3yp8go4.wasm": "WebBookApp.wasm",
+      "WebBookApp.4iy71l7dv4.wasm": "WebBookApp.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.rtblh4npr3.js": "dotnet.native.js",
       "dotnet.native.aqhezbunpl.wasm": "dotnet.native.wasm",
@@ -95,7 +95,7 @@
       "System.Text.Encodings.Web.j8jbnca1on.wasm": "sha256-3cJRUrFjSoiaGlI3OmHNndawtN8Y5lEgLHYI76jlAvo=",
       "System.Text.Json.lepawgii6u.wasm": "sha256-42Dc8NEr1FOKIX5mE3koct2nZvQm8HC/bKu7rDXv1AA=",
       "System.Text.RegularExpressions.3zydt3n8n9.wasm": "sha256-sXTH9c57ccmOHrE+Bpsiewg0xWGtHrbl8KBKpTJW9VA=",
-      "WebBookApp.1rh3yp8go4.wasm": "sha256-Y53XuPneWXfWnc62dLUh6JzvcdIXmP3eI0xOrm/Xcl8="
+      "WebBookApp.4iy71l7dv4.wasm": "sha256-lJDP6Jmc1Z+je6+OixzU4SJsofReVPvM6sJd1KIZ5g8="
     }
   },
   "cacheBootResources": true,
