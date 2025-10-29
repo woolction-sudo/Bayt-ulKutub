@@ -1,7 +1,7 @@
 /* /Layout/MainLayout.razor.rz.scp.css */
 .page[b-vvnii9gpj1] {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    background-color: #0e0e0e;
+    background-color: #000000;
     color: white;
     min-height: 100px;
     align-items: center;
@@ -14,7 +14,7 @@ main[b-vvnii9gpj1] {
 }
 
 .header[b-vvnii9gpj1] {
-    background-color: #0e0e0e;
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +47,7 @@ main[b-vvnii9gpj1] {
 }
 
 .header-left input[b-vvnii9gpj1] {    
-    background-color: #141414;
+    background: #151515; 
     color: #ffffff;
     
     height: 100%;
@@ -59,19 +59,21 @@ main[b-vvnii9gpj1] {
     padding-left: 35px;
     border-radius: 100px;
     box-sizing: border-box;
-    border: none;
+    border-style: ridge;
+    border: 1px solid rgba(0, 0, 0, 0);
 
-    outline-color: rgba(100, 100, 100, 0);
+    outline: none;
 
-    transition: outline-color 0.3s;
+    transition: border-color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
 .header-left input:focus[b-vvnii9gpj1] { 
-    outline-color: rgba(100, 100, 100, 1);
+    border-color: #ffffff;
+    background: #000000; 
 }
 
 .header-down[b-vvnii9gpj1] {
-    background-color: #0e0e0e;
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -143,11 +145,10 @@ main[b-vvnii9gpj1] {
 
 /* /Pages/BookSlider.razor.rz.scp.css */
 .slider-wrapper[b-zqxfc3argr] {
-  background-color: #1b1b1b;
+  background: #050505; 
   
-  border-color: rgba(100, 100, 100, 1);
   mask-border-width: 1px;
-  border: 1px solid #333;
+  border: 1px solid white;
   border-style: ridge;
   border-left: none;
   border-right: none;
@@ -157,68 +158,87 @@ main[b-vvnii9gpj1] {
   align-items: center;
   justify-content: center;
 
-  gap: 5px; 
   width: 100%;
   height: 100%;
   max-height: 350px;
+
+  margin-top: 15px;
 }
 
 .book-slider[b-zqxfc3argr] {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1295px;
 }
 
 .slider-container[b-zqxfc3argr] {
   display: flex;
   scroll-behavior: smooth;
-
+  padding: 10px;
+  gap: 6px;
   transition: transform 0.6s; 
 }
 
 .book-card[b-zqxfc3argr] {
-  flex: 0 0 190px;
+  flex: 0 0 200px;
   max-width: 200px;
-  margin: 10px 5px;
+  height: 310px;
+  margin: 0px 5px;
+  padding-bottom: 30px;
   border-radius: 15px;
 
-  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+  border-style: ridge;
+  border: 1px solid rgba(0, 0, 0, 0);
+  background: #151515; 
+
   text-decoration: none;
   text-align: center;
   color: white;
 
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
 }
 
 .book-card:hover[b-zqxfc3argr] {
   transform: scale(1.05);
-  background-color: rgba(100, 100, 100, 1);
+  background-color: #000000;
+  border-color: white;
 }
 
 .book-card img[b-zqxfc3argr] {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .ribbon-books[b-zqxfc3argr] {
   background-color: transparent;
-  border: none;
-  display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   text-align: start;
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
 }
 
 .ribbon-books span[b-zqxfc3argr] {
-  margin-top: 5px;
+  display:block;
   color: #fff;
   font-size: 15px;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .slider-btn[b-zqxfc3argr] {
-  background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  border: none;
   border-radius: 50%;
   font-size: 2rem;
 
@@ -227,15 +247,20 @@ main[b-vvnii9gpj1] {
   max-width: 40px;
   max-height: 40px;
 
+  border: 1px solid white;
+  background: #151515; 
+  
+
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease-in;
+  transition: transform 0.3s ease-in, background-color 0.3s ease-in;
 }
 
 .slider-btn:hover[b-zqxfc3argr] {
-  background-color: rgba(100, 100, 100, 1);
+  transform: scale(1.05);
+  background-color: #000000;
 }
 
 .slider-btn.left[b-zqxfc3argr] {
@@ -249,4 +274,89 @@ main[b-vvnii9gpj1] {
 
 
 
+/* /Pages/ModalWindow.razor.rz.scp.css */
+.modal-backdrop[b-46lw50attv] {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
+.modal-window[b-46lw50attv] {
+    position: relative;
+    display: flex;
+    flex-grow: wrap;
+    background: #000000; 
+    color: white;
+    border-radius: 14px;
+    padding: 24px;
+  
+    width: 40%;
+    height: 190px;
+
+    max-width: 400px;
+
+    border: 1px solid white;
+    border-style: ridge;
+
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.model-content[b-46lw50attv] {
+    flex-grow: 1;
+    margin: 10px 0 60px 0;
+}
+
+.modal-buttons[b-46lw50attv] {
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.butn[b-46lw50attv] {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border-style: ridge;
+ 
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-primary[b-46lw50attv] {
+    border: 1px solid white;
+    background: #077c00; 
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.btn-primary:hover[b-46lw50attv] {
+  background: #050505;
+  transform: scale(1.05);
+}
+
+.btn-secondar[b-46lw50attv] {
+    border: 1px solid white;
+    background-color: #a60000;
+    color: white;
+
+    transition: background-color 0.3s ease-in, transform 0.3s ease-in;
+}
+
+.btn-secondar:hover[b-46lw50attv] {
+  background-color: #050505;
+  transform: scale(1.05);
+}
